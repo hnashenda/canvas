@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="dist/fabric.min.js"></script>	
+	<script src='https://www.dropbox.com/s/7ipbu8iozx7jd6s/front-end.js?dl=0'></script>
+</head>
+<body>
+    <canvas id="canvas" width="300" height="300"></canvas>
+
+    
+    <script>
+        var canvas = new fabric.Canvas('canvas');
+
+        var rect = new fabric.Rect({
+            top : 100,
+            left : 100,
+            width : 60,
+            height : 70,
+            fill : 'red'
+        });
+
+        canvas.add(rect);
+    </script>
+</body>
+</html>
